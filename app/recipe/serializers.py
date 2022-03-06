@@ -45,3 +45,10 @@ class RecipeDetailSerializer(RecipeSerializer):
     #     model = Recipe
     #     fields = ("id", "name")
     #     read_only_fields = ("id",)
+
+
+class RecipeImageSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = Recipe
+        fields = ("id", "image")
+        read_only_fields = ("id",)
